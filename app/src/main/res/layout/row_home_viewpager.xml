@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="100dp"
+    android:layout_margin="15dp"
+    android:background="#FA000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/howtoplay_1" />
+
+        <ImageView
+            android:id="@+id/videoview"
+            android:layout_width="10dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/thumimage_load"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:layout_margin="-10dp"
+            android:layout_marginTop="-10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_margin="-10dp"
+            android:layout_marginTop="-10dp"
+
+            android:background="#7C0F0F0F" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_alignEnd="@id/hpwtoplay"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="-20dp"
+            android:layout_marginBottom="-20dp"
+            android:contentDescription="@string/dollar_image"
+            android:rotation="20"
+            android:src="@drawable/ic_badge_help" />
+
+        <TextView
+            android:id="@+id/toptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_toRightOf="@+id/videoview"
+            android:background="#14000000"
+            android:drawableLeft="@drawable/video_c"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/exo_bolditalic"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="Play Sqorr tips 'n tricks "
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/small_size"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/hpwtoplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/videoview"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/exo_extrabolditalic"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="how"
+            android:textAllCaps="false"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#fff"
+            android:textSize="@dimen/txt_size_24"
+            android:textStyle="normal"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

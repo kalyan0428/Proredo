@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main_cc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/win_loss_ll"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/size_ten"
+            android:layout_weight="0"
+            android:background="@drawable/edit_border_gray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pickgo_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#E5E5E5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:background="#d9d9d9" />
+
+                <TextView
+                    android:id="@+id/pickgo_2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#E5E5E5"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#d9d9d9" />
+
+                <TextView
+                    android:id="@+id/pickgo_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="#E5E5E5"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d9d9" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pickgo_4"
+                    android:layout_width="30dp"
+                    android:background="#E5E5E5"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#d9d9d9" />
+
+                <TextView
+                    android:id="@+id/pickgo_5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="#E5E5E5"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#d9d9d9" />
+
+                <TextView
+                    android:id="@+id/pickgo_6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="#E5E5E5"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d9d9d9" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pickgo_7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="#E5E5E5"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#d9d9d9" />
+
+                <TextView
+                    android:id="@+id/pickgo_8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="#E5E5E5"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#d9d9d9" />
+
+                <TextView
+                    android:id="@+id/pickgo_9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="#E5E5E5"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/play_a11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_five"
+            android:layout_weight="6"
+            android:background="@color/white"
+            android:gravity="center|start"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/rrr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_main_matchup_header"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_five"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_five"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/size_five"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/rules" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="#3C70B1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rlues_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_arrow_up"
+                        android:fontFamily="@font/exo_regular"
+                        android:gravity="center|start"
+                        android:padding="@dimen/size_five"
+                        android:text="Rules"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_15"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/dec_pp_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/playpick_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/exo_bold"
+                            android:text="Pick all 9 squares to play "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_14" />
+
+                        <TextView
+                            android:id="@+id/howdoi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/exo_bold"
+                            android:text="How do I win? "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_13"
+                            android:textStyle="" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/play_win"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_weight="6"
+            android:gravity="center|start"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_bold"
+                    android:text="WINNING ROWS  "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/win_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/exo_bold"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_17" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_bold"
+                    android:text="PAYOUT"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/payout_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/exo_bold"
+                    android:text="$1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_17" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lost_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_regular"
+            android:text="Better luck next time"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cc_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/cancel_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_five"
+            android:fontFamily="@font/exo_regular"
+            android:text="This card has been cancelled and your money refunded to your account.Why was it cancelled? Cards are cancelled when one or more games in a matchup are not played."
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/win_ll"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@color/green"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_win_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_extrabolditalic"
+            android:text="You win!"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+    </LinearLayout>
+
+</LinearLayout>

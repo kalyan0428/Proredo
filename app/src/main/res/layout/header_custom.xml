@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_border_header"
+    android:orientation="vertical"
+    android:paddingTop="1dp">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginRight="-15dp"
+        android:scrollbars="none">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="6dp"
+            card_view:cardMaxElevation="10dp"
+            card_view:contentPadding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.sport.playsqorr.utilities.PresetRadioGroup
+                    android:id="@+id/preset_time_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:presetRadioCheckedId="@+id/all">
+
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/all"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="140dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="All Sports"
+                        app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/prorod"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="PRO RODEO"
+                        app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/NFL"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="NFL"
+                        app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/NBA"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="NBA"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/NHL"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="NHL"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/PGA"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="PGA"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/NASCAR"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="NASCAR"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/WILD"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="WILD CARD"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/EPL"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="EPL"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/LA_LIGA"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="LA-LIGA"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/mls"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="MLS"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/NCAAFB"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="NCAAFB"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/mlb"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="MLB"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+
+
+
+
+
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/NCAAMB"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="NCAAMB"
+                         app:presetButtonUnitTextColor="@color/black" />
+
+
+                </com.sport.playsqorr.utilities.PresetRadioGroup>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

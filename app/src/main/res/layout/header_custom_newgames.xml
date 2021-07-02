@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_border_header"
+    android:orientation="vertical"
+    android:paddingTop="1dp">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginRight="-15dp"
+        android:scrollbars="none">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="6dp"
+            card_view:cardMaxElevation="10dp"
+            card_view:contentPadding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/second_status_bar_color_new">
+
+                <com.sport.playsqorr.utilities.PresetRadioGroup
+                    android:id="@+id/preset_time_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:presetRadioCheckedId="@+id/all">
+
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/matchup_new1"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/_44dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="-10dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="MATCHUP"
+                        app:presetButtonUnitTextColor="@color/white" />
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/playtictoc_new1"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/_44dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="-10dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="PLAY TIC TOC"
+                        app:presetButtonUnitTextColor="@color/white" />
+
+
+
+
+                    <com.sport.playsqorr.utilities.PresetValueButton
+                        android:id="@+id/playapic_new1"
+                        style="@style/PresetLayoutButton"
+                        android:layout_width="152dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="-10dp"
+                        android:gravity="center"
+                        app:presetButtonPressedTextColor="@color/white"
+                        app:presetButtonUnitText="PLAY A PICK"
+                        app:presetButtonUnitTextColor="@color/white" />
+
+
+                </com.sport.playsqorr.utilities.PresetRadioGroup>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

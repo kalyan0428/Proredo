@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8000000">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        tools:context=".views.Referfriend">
+
+        <include
+            android:id="@+id/head"
+            layout="@layout/custom_profile_toolbar" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head"
+            android:layout_marginTop="-5dp"
+            android:src="@drawable/shapesleft" />
+
+        <ImageView
+            android:id="@+id/rightside"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/head"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-12dp"
+            android:src="@drawable/shapesright" />
+
+        <ImageView
+            android:id="@+id/userpro"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rightside"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-55dp"
+            android:src="@drawable/referbadge" />
+
+        <TextView
+            android:id="@+id/referfriens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userpro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/exo_extrabold"
+            android:text="Invite Friends to Rodeo Sqor!"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_22"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refebefet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/referfriens"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/exo_regular"
+            android:text="Send an invite to your friends and you will \nreceive a bouns equal to their first deposit\n or purchase (up to $20)."
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_16"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/refebefetsig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/refebefet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/exo_regular"
+            android:text="You’ll receive $5 for each friend "
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_16"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/refebefetsigthat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/refebefetsig"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/exo_regular"
+            android:visibility="gone"
+            android:text=" that signs up and plays!* "
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_16"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:id="@+id/copy"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/refebefetsigthat"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/backgroun"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/faqtxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/exo_regular"
+                android:paddingLeft="20dp"
+                android:text="COPY REFERRAL LINK"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_14"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/coderef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faqtxt1"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/exo_bold"
+                android:paddingLeft="20dp"
+                android:text="playsqor.com/?referralCode="
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_14"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/copytext"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/copypaste" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/invitebutton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/copy"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="Invite Friends"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:id="@+id/linearViewFAQs"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/invitebutton"
+            android:layout_marginLeft="2dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:contentDescription="@string/faq_image"
+                android:src="@drawable/ic_referafriend" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/faqtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:text="0 Friends Joined"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/txt_size_17"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:text="Earn upto $20 for each friend joined "
+                    android:textColor="@color/btn_dis_bg"
+                    android:textSize="@dimen/txt_size_14"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".1"
+                android:contentDescription="@string/_chevron"
+                app:srcCompat="@drawable/ic_chevron" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearViewFAQs"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/exo_bold"
+            android:paddingLeft="0dp"
+            android:text="*To receive your $5 bonus, your referral must sign up and play a card with cash"
+            android:textAlignment="center"
+            android:textColor="#A3F1DCDC"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+</ScrollView>

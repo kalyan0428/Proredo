@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llPick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="start|center"
+            android:text="3/3"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <TextView
+            android:id="@+id/pro_2b1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="center"
+            android:text="x15"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivTokens0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tokens_new"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pro_3b1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_regular"
+                android:gravity="center"
+                android:text="$30"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="@dimen/size_ten"
+        android:layout_marginEnd="12dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="start|center"
+            android:text="2/3"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <TextView
+            android:id="@+id/pro_2b2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="center"
+            android:text="x15"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivTokens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tokens_new"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pro_3b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_regular"
+                android:gravity="center"
+                android:text="$30"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="@dimen/size_ten"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="@dimen/size_ten"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="start|center"
+            android:text="1/3"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <TextView
+            android:id="@+id/pro_2b3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="center"
+            android:text="x3"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivTokens1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tokens_new"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pro_3b3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_regular"
+                android:gravity="center"
+                android:text="$6"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="start|center"
+            android:text="0/3"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivTokens12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tokens_new"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_regular"
+                android:gravity="center"
+                android:text="Free Roll"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

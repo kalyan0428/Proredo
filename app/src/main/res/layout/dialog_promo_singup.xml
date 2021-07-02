@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    card_view:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view_all"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_below="@+id/youtube_player_view_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="4dp">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="Banner image"
+                android:scaleType="fitXY"
+                android:src="@drawable/promos_banner"
+                card_view:layout_constraintBottom_toTopOf="@+id/contentCaption"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="91dp"
+                android:layout_height="91dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="-2dp"
+                android:baselineAlignBottom="false"
+                android:contentDescription="Dollar image"
+                android:cropToPadding="false"
+                android:rotation="20"
+                android:scaleType="fitEnd"
+                android:src="@drawable/ic_badge_cash"
+                android:verticalScrollbarPosition="defaultPosition"
+                card_view:layout_constraintBottom_toBottomOf="@+id/imageView"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.752"
+                card_view:layout_constraintStart_toEndOf="@+id/imageView" />
+
+
+            <TextView
+                android:id="@+id/contentCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/exo_semibold"
+                android:text="Play For Cash Now"
+                android:textAllCaps="true"
+                android:textColor="@color/header"
+                android:textSize="@dimen/small_size"
+                card_view:layout_constraintBottom_toTopOf="@+id/cardView"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.09"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/imageView"
+                card_view:layout_constraintVertical_bias="0.52"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/contentMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/exo_extrabold"
+                android:text="Start playing your fee $5 now"
+                android:textAllCaps="false"
+                android:textColor="@color/header"
+                android:textSize="@dimen/txt_size_24"
+                android:layout_marginTop="-2dp"
+                card_view:layout_constraintBottom_toTopOf="@+id/textViewContent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.04"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/contentCaption" />
+
+            <TextView
+                android:id="@+id/textViewContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/exo_regular"
+                android:text="Jump into ProRodeo Pick and get started woth a $5 bonous!"
+                android:textColor="#212121"
+                android:textSize="16sp"
+                card_view:layout_constraintBottom_toTopOf="@+id/btnRedeem"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/contentMain" />
+
+            <Button
+                android:id="@+id/btnRedeem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/btn_bg_red"
+                android:fontFamily="@font/exo_bold"
+                android:text="Got it"
+                android:textColor="@android:color/white"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/textViewContent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EAEAEA"
+                card_view:layout_constraintBottom_toTopOf="@+id/textViewContent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/contentMain" />
+
+
+
+            <ImageView
+                android:id="@+id/imageViewcancel"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="24dp"
+                android:visibility="gone"
+                android:layout_marginBottom="4dp"
+                card_view:layout_constraintBottom_toTopOf="@+id/imageView2"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:srcCompat="@drawable/ic_cancek_white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

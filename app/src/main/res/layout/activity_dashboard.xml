@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <include
+            android:id="@+id/guestUserHeader"
+            layout="@layout/customheader"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            />
+
+        <include
+            android:id="@+id/loggedUserHeader"
+            layout="@layout/coinheader"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_footer"
+        android:layout_below="@+id/toolbar"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        >
+<!--        android:background="@color/signup_bg"-->
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#ffff"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/footer1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:onClick="onClickView"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/footer_selector1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/hometxt"
+                android:text="Home"
+                android:textColor="@drawable/font_selector"
+                android:textSize="@dimen/small_bf_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:onClick="onClickView"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/footer_selector2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/cardtxt"
+                android:text="My Cards"
+                android:textColor="@drawable/font_selector"
+                android:textSize="@dimen/small_bf_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:onClick="onClickView"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/footer_selector3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tips &amp; Videos"
+                android:textColor="@drawable/font_selector"
+                android:textSize="@dimen/small_bf_size"
+                android:id="@+id/tvtxt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:onClick="onClickView"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/footer_selector4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Promos"
+                android:id="@+id/promotxt"
+                android:textColor="@drawable/font_selector"
+                android:textSize="@dimen/small_bf_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rlIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_withdraw">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_wager" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/rlIcon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTransactionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_semibold"
+            android:text="@string/_wager"
+            android:textColor="@color/medium_gray"
+            android:textSize="@dimen/small_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:fontFamily="@font/exo_extrabolditalic"
+                android:maxLines="1"
+                android:layout_toLeftOf="@id/tvAddOrRemove"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:text=" "
+                android:textColor="@color/header"
+                android:textSize="@dimen/normal_size" />
+
+            <TextView
+                android:id="@+id/tvAddOrRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/tvAmount"
+                android:fontFamily="@font/exo_regular"
+                android:text="-"
+                android:textColor="@color/header"
+                android:textSize="@dimen/normal_size" />
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/exo_extrabolditalic"
+                android:text="15"
+                android:textColor="@color/header"
+                android:textSize="@dimen/normal_size"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llToken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvAddOrRemoveToken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:text="-"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/txt_size_19" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_token_custom" />
+
+                <TextView
+                    android:id="@+id/tvTokenAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/exo_extrabolditalic"
+                    android:text="15"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/normal_size"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/exo_italic"
+                android:text="06/04/19"
+                android:textColor="@color/medium_gray"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/tvBalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/exo_italic"
+                android:text="100"
+                android:textColor="@color/medium_gray"
+                android:textSize="@dimen/small_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sep_view_color" />
+
+</RelativeLayout>

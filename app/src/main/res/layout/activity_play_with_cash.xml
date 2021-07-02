@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".views.PlayWithCash">
+
+    <include layout="@layout/custom_toolbar_layout" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_sub_id"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:padding="10dp"
+                    android:text="@string/sign_to_continue"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/txt_size_22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/sign_up_with"
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textColor="#202020"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/fb_google_layout"
+                    android:visibility="gone"/>
+
+                <include layout="@layout/seperator_view"
+                    android:visibility="gone"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    app:cardElevation="0.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Label_TextView"
+                            android:text="@string/full_name"
+                            android:textAllCaps="true"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/et_full_name"
+                            style="@style/Label_EditText"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/full_name_hint"
+                            android:inputType="textPersonName"
+
+                            />
+
+                        <View
+                            android:id="@+id/name_view"
+                            style="@style/Label_ViewLine"
+                            android:layout_width="match_parent" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    app:cardElevation="0.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Label_TextView"
+                            android:text="@string/email_address" />
+
+                        <EditText
+                            android:id="@+id/et_email_address"
+                            style="@style/Label_EditText"
+                            android:hint="@string/email_hint"
+                            android:inputType="textEmailAddress" />
+
+                        <TextView
+                            android:id="@+id/tvEmailError"
+                            style="@style/Label_Errortext"
+                            android:drawableStart="@drawable/ic_warning"
+                            android:text="@string/email_error_txt"
+                            android:textColor="@color/sqorr_red"
+                            android:visibility="gone" />
+
+                        <View
+                            android:id="@+id/email_view"
+                            style="@style/Label_ViewLine"
+                            android:layout_width="match_parent" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    app:cardElevation="0.5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/title"
+                            style="@style/Label_TextView"
+                            android:text="@string/password"
+                            android:textAllCaps="true" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etPasswordLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title"
+                            app:hintEnabled="false"
+                            app:passwordToggleDrawable="@drawable/password_toggle"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/text_color_new">
+
+                            <EditText
+                                android:id="@+id/et_password"
+                                style="@style/Label_EditText"
+                                android:layout_height="32dp"
+                                android:layout_marginBottom="8dp"
+                                android:hint="@string/pwd_hint"
+                                android:inputType="textPassword" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <View
+                            android:id="@+id/pwd_view"
+                            style="@style/Label_ViewLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/etPasswordLayout" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvAtLeastEightChars"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marign_normal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/marign_normal"
+                    android:drawableStart="@drawable/ic_wrong"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:text="@string/at_least_8_characters"
+                    android:textColor="@color/validation_color"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/tvAtLeastOneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marign_normal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/marign_normal"
+                    android:drawableStart="@drawable/ic_wrong"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:text="@string/at_least_one_number"
+                    android:textColor="@color/validation_color"
+                    android:textSize="@dimen/small_size" />
+
+
+                <TextView
+                    android:id="@+id/tvOnceSpecialChar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marign_normal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/marign_normal"
+                    android:drawableStart="@drawable/ic_wrong"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:text="@string/one_special_character"
+                    android:textColor="@color/validation_color"
+                    android:textSize="@dimen/small_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/sep_view_color" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+
+                    android:background="@color/white"
+                    app:cardElevation="0.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Label_TextView"
+                            android:text="@string/_dob"
+                            android:textAllCaps="true" />
+
+                        <EditText
+                            android:id="@+id/et_dob"
+                            style="@style/Label_EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:hint="@string/dob_hint" />
+
+                        <View
+                            android:id="@+id/age_view"
+                            style="@style/Label_ViewLine"
+                            android:layout_width="match_parent" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+
+                    android:background="@color/white"
+                    app:cardElevation="0.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            style="@style/Label_TextView"
+                            android:fontFamily="@font/exo_bold"
+                            android:text="@string/phone_number"
+                            android:textAllCaps="true" />
+
+                        <EditText
+                            android:id="@+id/et_ph_no"
+                            style="@style/Label_EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/exo_regular"
+                            android:hint="@string/phone_hint" />
+
+                        <View
+                            android:id="@+id/number_view"
+                            style="@style/Label_ViewLine"
+                            android:layout_width="match_parent" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvPromo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    app:cardElevation="0.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            style="@style/Label_TextView"
+                            android:text="@string/promo_header"
+                            android:textAllCaps="true" />
+
+
+                        <TextView
+                            android:id="@+id/tvPromoError"
+                            style="@style/Label_Errortext"
+                            android:drawableStart="@drawable/ic_warning"
+                            android:text="@string/promo_error_txt"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/promo_tokens"
+                                style="@style/Label_EditText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                                android:layout_weight="1.7"
+                                android:hint="@string/promo_hint"
+                                android:maxLength="20"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:id="@+id/promo_apply"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/edit_border_appy"
+                                android:fontFamily="@font/exo_semibold"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="APPLY"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/txt_size_13"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sucess_promo_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/tvPromos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1.7"
+                                android:drawableStart="@drawable/ic_promo_sm_applied_s"
+                                android:drawablePadding="7dp"
+                                android:fontFamily="@font/exo_bold"
+                                android:text=""
+                                android:textColor="@color/bg_green"
+                                android:textSize="@dimen/small_bf_size"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/close_promo_s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="5dp"
+                                android:text="X"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/txt_size_15" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/error_promo_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1.7"
+                                android:drawableStart="@drawable/ic_warning"
+                                android:drawablePadding="@dimen/size_five"
+                                android:fontFamily="@font/exo_regular"
+                                android:text="@string/promo_error_txt"
+                                android:textColor="@color/sqorr_red"
+                                android:textSize="@dimen/small_bf_size"
+                                android:visibility="visible" />
+
+
+                            <TextView
+                                android:id="@+id/close_promo_e"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="5dp"
+                                android:text="X"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/txt_size_15" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/promo_view"
+                            style="@style/Label_ViewLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/sep_view_color" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_form"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="45dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/login_bg_disable"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:gravity="center"
+                    android:text="@string/btn_sign_up"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/btn_dis_text"
+                    android:textSize="@dimen/txt_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/already_have_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/already_hv_ac"
+                    android:textColor="@color/text_color_new"
+                    android:textSize="@dimen/small_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

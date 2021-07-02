@@ -1,0 +1,181 @@
+{
+  "project_info": {
+    "project_number": "622816032142",
+    "firebase_url": "https://play-sqorr-1566077441408.firebaseio.com",
+    "project_id": "play-sqorr-1566077441408",
+    "storage_bucket": "play-sqorr-1566077441408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622816032142:android:c0701054d5093a14",
+        "android_client_info": {
+          "package_name": "com.play.sqorr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622816032142-rkvrpvavhu5l7bgeg51j1lrhl8ehk6fo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.play.sqorr",
+            "certificate_hash": "bcb187962a1bf711a268712d3481ea2e47278af1"
+          }
+        },
+        {
+          "client_id": "622816032142-obapahs83javi67cai6ckvvircfcn35q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.play.sqorr",
+            "certificate_hash": "8afe657f56d862a32995113cd79e413b300343bf"
+          }
+        },
+        {
+          "client_id": "622816032142-vk8rtu557568d6225h1g4776mdj57heq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.play.sqorr",
+            "certificate_hash": "5b54cbf4f1c1516bd2879c13e346d0d8f71e5020"
+          }
+        },
+        {
+          "client_id": "622816032142-jm0maqsujebehenp6viurbjjgjm5oq1q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.play.sqorr",
+            "certificate_hash": "2673d78d461f37663cc4982212747331b1065042"
+          }
+        },
+        {
+          "client_id": "622816032142-tnq5rogas4fqeb5stvr86m3061ictnbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.play.sqorr",
+            "certificate_hash": "654b68b2d81e76f032b3099c8fb533e8900e100d"
+          }
+        },
+        {
+          "client_id": "622816032142-f7dip7o6cf6opb14a25chk5rdov16j4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.play.sqorr",
+            "certificate_hash": "9240a7807a80e0bbce211deed8ee215090b937aa"
+          }
+        },
+        {
+          "client_id": "622816032142-6cgreg39fga5amftm3npdi3uru5abbiv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.play.sqorr",
+            "certificate_hash": "e96a50187d100543eabab6cc64eb37252fe2c322"
+          }
+        },
+        {
+          "client_id": "622816032142-0vcpa6esibjeip8h3gort3ogpa326i61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEGK6oLudnt649o93VemR3Izup2K5g4fE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622816032142-utrq7260i5951tqrabs1i2q78jdv9q58.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "622816032142-2lq9rgm6ru19rq8q3vscsf9csvatrho9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sports.playsqorr",
+                "app_store_id": "1476162017"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622816032142:android:a87427f950216b738560df",
+        "android_client_info": {
+          "package_name": "com.sport.playsqorr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622816032142-61937kn1pof28fjbprb02qaib42pdb6a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport.playsqorr",
+            "certificate_hash": "5b54cbf4f1c1516bd2879c13e346d0d8f71e5020"
+          }
+        },
+        {
+          "client_id": "622816032142-k20a6clr85tmta6leq6sc54b4ai0hlp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport.playsqorr",
+            "certificate_hash": "2673d78d461f37663cc4982212747331b1065042"
+          }
+        },
+        {
+          "client_id": "622816032142-s5mp9uk6t6tf6hbsftj3m3g896jl3igq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport.playsqorr",
+            "certificate_hash": "654b68b2d81e76f032b3099c8fb533e8900e100d"
+          }
+        },
+        {
+          "client_id": "622816032142-ln16tg1ar74fdq7jmkcrpcha6sfh0t1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport.playsqorr",
+            "certificate_hash": "9240a7807a80e0bbce211deed8ee215090b937aa"
+          }
+        },
+        {
+          "client_id": "622816032142-iojv8ebicqn4qbaponphsb4h7fa6batp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport.playsqorr",
+            "certificate_hash": "e96a50187d100543eabab6cc64eb37252fe2c322"
+          }
+        },
+        {
+          "client_id": "622816032142-0vcpa6esibjeip8h3gort3ogpa326i61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEGK6oLudnt649o93VemR3Izup2K5g4fE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622816032142-utrq7260i5951tqrabs1i2q78jdv9q58.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "622816032142-2lq9rgm6ru19rq8q3vscsf9csvatrho9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sports.playsqorr",
+                "app_store_id": "1476162017"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

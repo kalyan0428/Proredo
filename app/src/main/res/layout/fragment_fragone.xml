@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header_c"
+        layout="@layout/header_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <include
+        android:id="@+id/banner_c"
+        layout="@layout/header_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/second_status_bar_color"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/banner_c1"
+        layout="@layout/header_banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/second_status_bar_color"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/header_c_new"
+        layout="@layout/header_custom_newgames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!--    <HorizontalScrollView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+    <HorizontalScrollView
+        android:id="@+id/horizontal_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_five"
+            android:layout_marginTop="@dimen/size_five"
+            android:layout_marginRight="@dimen/txt_size_16"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:visibility="visible"
+            android:weightSum="10">
+
+
+            <Button
+                android:id="@+id/matchup_b1"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_border_header"
+                android:fontFamily="@font/exo_extrabold"
+
+                android:gravity="center"
+                android:text="Match-Up"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/matchup_b2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_border_header"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+
+                android:paddingLeft="@dimen/size_five"
+                android:paddingRight="@dimen/size_five"
+                android:text="Play Tac Toe"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/matchup_b3"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_border_header"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_five"
+                android:paddingRight="@dimen/size_five"
+
+                android:text="Play a Pick"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/matchup_b4"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_border_header"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_five"
+                android:paddingRight="@dimen/size_five"
+                android:text="Win Play Show"
+                android:textAllCaps="false"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/matchup_b5"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_border_header"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_five"
+                android:paddingRight="@dimen/size_five"
+                android:text="Win Play Go"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_new_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_toppro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_five"
+            android:layout_marginTop="@dimen/size_five"
+            android:layout_marginRight="@dimen/txt_size_16"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/pro_b1"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:text="MAKE THE 8"
+                android:textAllCaps="false"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/pro_b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_five"
+                android:paddingRight="@dimen/size_five"
+                android:text="BRONC N ROLL"
+                android:textAllCaps="false"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/pro_b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_five"
+                android:paddingRight="@dimen/size_five"
+                android:text="WIN PLAY SQOR"
+                android:textAllCaps="false"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/pro_b4"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_five"
+
+                android:paddingRight="@dimen/size_five"
+                android:text="SADDLE BRONC"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/pro_b5"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_five"
+                android:paddingRight="@dimen/size_five"
+                android:text="RIDE PLAY SQOR"
+                android:textAllCaps="false"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/pro_b6"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_five"
+                android:paddingRight="@dimen/size_five"
+                android:text="COWGRLZ"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/pro_b7"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_five"
+                android:paddingRight="@dimen/size_five"
+                android:text="HEAD N HEEL"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_13"
+                android:visibility="visible" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/home_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_footer"
+        android:layout_below="@+id/toolbar"
+        android:animateLayoutChanges="true"
+        android:background="@color/second_status_bar_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/no_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/no_logo"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_tab_cards_loggedout"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/no_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:gravity="center"
+                    android:text="@string/withoutloginhome"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/txt_size_20" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+            <!-- <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                 android:id="@+id/swipe_container"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">-->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHomeCards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/fragment_mlb_new" />
+
+            <!--            app:layoutManager="LinearLayoutManager"-->
+            <!-- </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

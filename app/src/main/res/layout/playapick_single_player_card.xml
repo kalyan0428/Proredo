@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_ten"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/win_loss_statusView_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/win_loss_statusView"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/statusTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_bold"
+                android:text="WIN"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_size" />
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/playerCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/win_loss_statusView_ly"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_border_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/playerCard"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/gray_line"
+            android:visibility="visible"
+            app:cardCornerRadius="4dp"
+            card_view:contentPadding="0dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/gray_line">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size_five">
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/player_img"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="0dp"
+                                android:padding="0dp"
+                                android:scaleType="fitCenter"
+                                android:visibility="visible" />
+
+                            <Button
+                                android:id="@+id/player_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/player_points_bg"
+                                android:fontFamily="@font/exo_extrabold"
+                                android:gravity="center"
+                                android:minWidth="40dp"
+                                android:minHeight="23dp"
+                                android:paddingStart="3dp"
+                                android:paddingTop="2dp"
+                                android:paddingEnd="3dp"
+                                android:paddingBottom="2dp"
+                                android:text="+04.5"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/txt_size_13"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/player_Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/exo_bold"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:maxLength="12"
+                            android:text="Player name"
+                            android:textColor="@color/darkest_gray"
+                            android:textSize="@dimen/small_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/player_Match"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/exo_bold"
+                                android:gravity="center"
+                                android:text="POR vs GCM"
+                                android:textColor="@color/medium_gray"
+                                android:textSize="@dimen/small_size" />
+
+                            <TextView
+                                android:id="@+id/player_place"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="0dp"
+
+                                android:fontFamily="@font/exo_bolditalic"
+                                android:gravity="center"
+                                android:text=" "
+                                android:textColor="@color/medium_gray"
+                                android:textSize="@dimen/small_size"
+                                android:visibility="visible" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/player_position"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="@font/exo_bolditalic"
+                                android:text="  #10"
+                                android:textColor="@color/medium_gray"
+                                android:textSize="@dimen/small_size"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/player_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/exo_bold"
+                                android:gravity="center"
+                                android:text="1h 54m"
+                                android:textColor="@color/medium_gray"
+                                android:textSize="@dimen/small_size" />
+
+                            <blink
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/player_time1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/exo_bold"
+                                    android:gravity="center"
+                                    android:text="1h 54m"
+                                    android:textColor="@color/medium_gray"
+                                    android:textSize="@dimen/small_size"
+                                    android:typeface="serif"
+                                    android:visibility="gone" />
+                            </blink>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/left_matchcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center|top"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/flPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_five"
+                        android:orientation="vertical">
+
+
+                        <CheckBox
+                            android:id="@+id/playerCheck"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/size_five"
+                            android:background="@drawable/player_checked"
+                            android:button="@null"
+                            android:clickable="false" />
+
+                        <CheckBox
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="-30dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/player_checked"
+                            android:button="@null"
+                            android:clickable="false"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="0dp">
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--OVER UNDER-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/no_player"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="-10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+
+            android:background="@color/white"
+            android:visibility="gone"
+            card_view:cardElevation="3dp"
+            card_view:cardMaxElevation="10dp"
+            card_view:contentPadding="4dp">
+
+
+            <include
+                layout="@layout/overunder_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center|start"
+                android:layout_marginRight="0.1dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- RIGHT SIDE CARD-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/second_playerCard"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:cardCornerRadius="4dp"
+            card_view:contentPadding="0dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+
+                android:background="@color/gray_line">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/second_player_Name"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/exo_bold"
+                                android:gravity="right"
+                                android:lines="1"
+                                android:text="Player name"
+                                android:textColor="@color/darkest_gray"
+                                android:textSize="@dimen/small_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="center|right"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/second_player_Match"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/exo_bold"
+                                    android:gravity="center|start"
+                                    android:text="POR vs GCM"
+                                    android:textColor="@color/medium_gray"
+                                    android:textSize="@dimen/small_size" />
+
+                                <TextView
+                                    android:id="@+id/second_player_place"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="0dp"
+
+                                    android:fontFamily="@font/exo_bolditalic"
+                                    android:gravity="center|start"
+                                    android:text="  #10"
+                                    android:textColor="@color/medium_gray"
+                                    android:textSize="@dimen/small_size"
+                                    android:visibility="visible" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center|right"
+
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/second_player_position"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/exo_bolditalic"
+                                    android:text="  #10"
+                                    android:textColor="@color/medium_gray"
+                                    android:textSize="@dimen/small_size"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/second_player_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/exo_bold"
+                                    android:gravity="center"
+                                    android:text="1h 54m"
+                                    android:textColor="@color/medium_gray"
+                                    android:textSize="@dimen/small_size" />
+
+                                <blink
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/second_player_time1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/exo_bold"
+                                        android:gravity="center"
+                                        android:text="1h 54m"
+                                        android:textColor="@color/medium_gray"
+                                        android:textSize="@dimen/small_size"
+                                        android:typeface="serif"
+                                        android:visibility="gone" />
+                                </blink>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="@dimen/size_five">
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/second_player_img"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="0dp"
+                                android:padding="0dp"
+                                android:scaleType="fitCenter"
+                                android:visibility="visible" />
+
+                            <Button
+                                android:id="@+id/second_player_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/player_points_bg"
+                                android:fontFamily="@font/exo_extrabold"
+                                android:gravity="center"
+                                android:minWidth="40dp"
+                                android:minHeight="23dp"
+                                android:paddingStart="3dp"
+                                android:paddingTop="2dp"
+                                android:paddingEnd="3dp"
+                                android:paddingBottom="2dp"
+                                android:text="+04.5"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/txt_size_13"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/right_matchcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/frPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_five"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/second_playerCheck"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/size_ten"
+                            android:background="@drawable/player_checked"
+                            android:button="@null"
+                            android:clickable="false" />
+
+                        <CheckBox
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="top|end"
+                            android:layout_marginStart="-30dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/second_player_img"
+                            android:background="@drawable/player_checked"
+                            android:button="@null"
+                            android:clickable="false"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="0dp">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+
+                                android:padding="2.5dp"
+                                android:scaleType="fitCenter"
+                                android:visibility="visible" />
+
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="-5dp"
+                            android:layout_marginTop="-12dp"
+                            android:background="@drawable/player_points_bg"
+                            android:fontFamily="@font/exo_extrabold"
+                            android:gravity="center"
+                            android:minWidth="45dp"
+                            android:minHeight="23dp"
+                            android:paddingStart="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="3dp"
+                            android:paddingBottom="2dp"
+                            android:text="+04.5"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/txt_size_16" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frPlayer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/exo_bold"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="Player name"
+                    android:textColor="@color/darkest_gray"
+                    android:textSize="@dimen/normal_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/exo_bolditalic"
+                    android:text="Point guard"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/small_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/exo_bold"
+                        android:gravity="center"
+                        android:text="POR vs GCM"
+                        android:textColor="@color/medium_gray"
+                        android:textSize="@dimen/small_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/exo_bold"
+                        android:gravity="center"
+                        android:text="1h 54m"
+                        android:textColor="@color/medium_gray"
+                        android:textSize="@dimen/small_size" />
+
+                    <blink
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/exo_bold"
+                            android:gravity="center"
+                            android:text="1h 54m"
+                            android:textColor="@color/medium_gray"
+                            android:textSize="@dimen/small_size"
+                            android:typeface="serif"
+                            android:visibility="gone" />
+                    </blink>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!--ABC-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/no_player_abc"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginRight="0.1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:visibility="visible"
+            card_view:cardElevation="3dp"
+            card_view:cardMaxElevation="10dp"
+            card_view:contentPadding="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/over_playercard_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="0dp"
+                            android:background="@drawable/edit_border_gray"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:id="@+id/flPlayer_b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="false"
+                                    android:layout_centerInParent="true">
+
+                                    <CheckBox
+                                        android:id="@+id/playerCheck_b"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_gravity="top|end"
+                                        android:layout_marginStart="-25dp"
+                                        android:layout_marginTop="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_toEndOf="@+id/player_img_b"
+                                        android:background="@drawable/player_checked"
+                                        android:button="@null"
+                                        android:clickable="false"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/size_five"
+                                        android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="@dimen/size_five">
+
+                                            <ImageView
+                                                android:id="@+id/player_img_b"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="1dp"
+                                                android:padding="2.5dp"
+                                                android:scaleType="fitCenter"
+                                                android:visibility="visible" />
+
+
+                                        </RelativeLayout>
+
+                                        <Button
+                                            android:id="@+id/player_price_b"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="-12dp"
+                                            android:background="@drawable/player_points_bg"
+                                            android:fontFamily="@font/exo_extrabold"
+                                            android:gravity="center"
+                                            android:minWidth="10dp"
+                                            android:minHeight="5dp"
+                                            android:paddingStart="1dp"
+                                            android:paddingTop="1dp"
+                                            android:paddingEnd="1dp"
+                                            android:paddingBottom="1dp"
+                                            android:text="+04.5"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="@dimen/txt_size_13"
+                                            android:visibility="gone" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/size_five"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/player_Name_b"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/flPlayer_b"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="2dp"
+                                                android:fontFamily="@font/exo_bold"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:maxLength="10"
+                                                android:text="Player name"
+                                                android:textColor="@color/darkest_gray"
+                                                android:textSize="@dimen/small_size" />
+
+                                            <TextView
+                                                android:id="@+id/player_position_b"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/player_Name_b"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="2dp"
+                                                android:fontFamily="@font/exo_bolditalic"
+                                                android:text="Point guard"
+                                                android:textColor="@color/medium_gray"
+                                                android:textSize="@dimen/size_ten"
+                                                android:visibility="gone" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_marginBottom="@dimen/size_five"
+                                                android:orientation="horizontal"
+                                                android:weightSum="2">
+
+                                                <TextView
+                                                    android:id="@+id/player_Match_b"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:fontFamily="@font/exo_bold"
+                                                    android:gravity="center|start"
+                                                    android:text="POR vs GCM"
+                                                    android:textColor="@color/medium_gray"
+                                                    android:textSize="@dimen/size_ten" />
+
+                                                <TextView
+                                                    android:id="@+id/player_place_b"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="0dp"
+
+                                                    android:fontFamily="@font/exo_bolditalic"
+                                                    android:gravity="center"
+                                                    android:text=""
+                                                    android:textColor="@color/medium_gray"
+                                                    android:textSize="@dimen/small_size"
+                                                    android:visibility="visible" />
+
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:id="@+id/player_time_b"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|start"
+                                                android:fontFamily="@font/exo_bold"
+                                                android:gravity="center|start"
+                                                android:text="1h 54m"
+                                                android:textColor="@color/medium_gray"
+                                                android:textSize="@dimen/small_size" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/over_playercard_c"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center|top"
+                            android:layout_margin="0dp"
+                            android:background="@drawable/edit_border_gray"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:id="@+id/flPlayer_c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true">
+
+                                    <CheckBox
+                                        android:id="@+id/playerCheck_c"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_gravity="top|end"
+                                        android:layout_marginStart="-25dp"
+                                        android:layout_marginTop="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_toEndOf="@+id/player_img_c"
+                                        android:background="@drawable/player_checked"
+                                        android:button="@null"
+                                        android:clickable="false"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/size_five"
+                                        android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="@dimen/size_five">
+
+                                            <ImageView
+                                                android:id="@+id/player_img_c"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_gravity="center"
+                                                android:padding="2.5dp"
+                                                android:scaleType="fitCenter"
+                                                android:visibility="visible" />
+
+
+                                        </RelativeLayout>
+
+
+                                        <Button
+                                            android:id="@+id/player_price_c"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="-12dp"
+                                            android:background="@drawable/player_points_bg"
+                                            android:fontFamily="@font/exo_extrabold"
+                                            android:gravity="center"
+                                            android:minWidth="10dp"
+                                            android:minHeight="5dp"
+                                            android:paddingStart="1dp"
+                                            android:paddingTop="1dp"
+                                            android:paddingEnd="1dp"
+                                            android:paddingBottom="1dp"
+                                            android:text="+04.5"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="@dimen/txt_size_13"
+                                            android:visibility="gone" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_marginLeft="@dimen/size_five"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/player_Name_c"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/flPlayer_c"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="2dp"
+                                                android:fontFamily="@font/exo_bold"
+                                                android:gravity="center|start"
+                                                android:lines="1"
+                                                android:maxLength="10"
+                                                android:text="Player name"
+                                                android:textColor="@color/darkest_gray"
+                                                android:textSize="@dimen/small_size" />
+
+                                            <TextView
+                                                android:id="@+id/player_position_c"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/player_Name_c"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="2dp"
+                                                android:fontFamily="@font/exo_bolditalic"
+                                                android:text="Point guard"
+                                                android:textColor="@color/medium_gray"
+                                                android:textSize="@dimen/size_ten"
+                                                android:visibility="gone" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_marginBottom="1dp"
+                                                android:orientation="horizontal"
+                                                android:weightSum="2">
+
+                                                <TextView
+                                                    android:id="@+id/player_Match_c"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:fontFamily="@font/exo_bold"
+                                                    android:gravity="center|start"
+                                                    android:text="POR vs GCM"
+                                                    android:textColor="@color/medium_gray"
+                                                    android:textSize="@dimen/size_ten" />
+
+                                                <TextView
+                                                    android:id="@+id/player_place_c"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="0dp"
+
+                                                    android:fontFamily="@font/exo_bolditalic"
+                                                    android:gravity="center"
+                                                    android:text=" "
+                                                    android:textColor="@color/medium_gray"
+                                                    android:textSize="@dimen/small_size"
+                                                    android:visibility="visible" />
+
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:id="@+id/player_time_c"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/exo_bold"
+                                                android:gravity="center|start"
+                                                android:text="1h 54m"
+                                                android:textColor="@color/medium_gray"
+                                                android:textSize="@dimen/small_size" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/light_gray" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- <androidx.cardview.widget.CardView
+             android:id="@+id/second_playerCard"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:layout_margin="0.1dp"
+             android:layout_weight="1"
+             android:visibility="visible"
+             card_view:contentPadding="0dp">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:background="@android:color/white"
+                 android:gravity="center"
+                 android:orientation="vertical">
+
+                 <FrameLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:background="@android:color/white">
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="@dimen/size_five"
+                         android:orientation="vertical">
+
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:gravity="center">
+
+
+                             <ImageView
+                                 android:id="@+id/second_player_img"
+                                 android:layout_width="100dp"
+                                 android:layout_height="100dp"
+                                 android:layout_gravity="center"
+                                 android:padding="3dp"
+                                 android:scaleType="fitCenter" />
+
+                             <CheckBox
+                                 android:id="@+id/second_playerCheck"
+                                 android:layout_width="@dimen/size_thirty_five"
+                                 android:layout_height="@dimen/size_thirty_five"
+                                 android:layout_alignParentTop="true"
+                                 android:layout_gravity="top|right"
+                                 android:layout_marginLeft="-30dp"
+                                 android:layout_marginTop="0dp"
+                                 android:layout_marginBottom="10dp"
+                                 android:layout_toRightOf="@+id/second_player_img"
+                                 android:background="@drawable/player_checked"
+                                 android:button="@null"
+                                 android:clickable="false" />
+
+                         </RelativeLayout>
+
+                         <Button
+                             android:id="@+id/second_player_price"
+                             android:layout_width="70dp"
+                             android:layout_height="30dp"
+                             android:layout_gravity="center|bottom"
+                             android:layout_marginTop="-15dp"
+                             android:background="@drawable/player_points_bg"
+                             android:gravity="center"
+                             android:padding="3dp"
+                             android:textColor="@android:color/white" />
+                     </LinearLayout>
+
+                 </FrameLayout>
+
+                 <TextView
+                     android:id="@+id/second_player_Name"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:fontFamily="@font/exo_bold"
+                     android:gravity="center"
+                     android:lines="1"
+                     android:padding="5dp"
+                     android:textColor="@color/text_color_new"
+                     android:textSize="16sp" />
+
+                 <TextView
+                     android:id="@+id/second_player_position"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:fontFamily="@font/exo_bold"
+                     android:gravity="center"
+                     android:padding="5dp"
+                     android:textColor="@color/hint" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:orientation="horizontal"
+                     android:padding="5dp"
+                     android:weightSum="2">
+
+                     <TextView
+                         android:id="@+id/second_player_Match"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_weight="1"
+                         android:fontFamily="@font/exo_bold"
+                         android:gravity="center"
+                         android:padding="5dp"
+                         android:textColor="@color/hint"
+                         android:textSize="13sp" />
+
+                     <TextView
+                         android:id="@+id/second_player_time"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_weight="1"
+                         android:fontFamily="@font/exo_bold"
+                         android:gravity="center"
+                         android:padding="5dp"
+                         android:textColor="@color/hint"
+                         android:textSize="13sp" />
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+
+         </androidx.cardview.widget.CardView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sq_cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="@dimen/_44dp"
+        android:foregroundGravity="center|right"
+        android:gravity="center|right"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|right"
+            android:background="@color/gray_line"
+            android:clickable="true"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/gray_line"
+                android:drawableBottom="@drawable/ic_info_i"
+                android:fontFamily="@font/exo_regular"
+                android:gravity="center"
+                android:padding="@dimen/size_five"
+                android:text="SQOR PTS &amp; AVGS"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sq_cc_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="0dp"
+        android:foregroundGravity="right"
+        android:gravity="right"
+        android:orientation="vertical"
+
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/gray_line"
+            android:clickable="true"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/gray_line"
+                android:drawableBottom="@drawable/ic_info_i"
+                android:fontFamily="@font/exo_regular"
+                android:gravity="center"
+                android:padding="@dimen/size_five"
+                android:text="SQOR PTS &amp; AVGS"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/exo_bold"
+            android:text="Season Averages"
+            android:textColor="@color/header"
+            android:textSize="@dimen/small_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerCardView"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/playerstatsViewSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            app:cardCornerRadius="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@android:color/white"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:id="@+id/plsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/exo_bold"
+                    android:text="Season Averages"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/plsy"
+                    android:fontFamily="@font/exo_bold"
+                    android:text="PLAY"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/small_size"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="-5dp"
+                    android:src="@drawable/ic_arrow_up"
+                    android:tint="@color/text_color_new" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/playerStatisticsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/heads_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+
+                    android:id="@+id/player_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_bold"
+                    android:gravity="center"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/player_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_bold"
+                    android:gravity="center"
+                    android:text="POR vs GCM"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/player_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_bold"
+                    android:gravity="center"
+                    android:text="POR vs GCM"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/player_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_bold"
+                    android:gravity="center"
+                    android:text="POR vs GCM"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/small_size" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/playerStatsRcView_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

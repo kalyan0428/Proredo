@@ -1,0 +1,602 @@
+<resources>
+    <string name="app_name">RodeoSqor</string>
+    <string name="withoutlogin">Login or Sign up to track your\n upcoming cards, live cards,\nand cards that you have won.</string>
+    <string name="withoutloginhome">Login or Sign up to track your cards.</string>
+    <!--  <string name="facebook_app_id">2336992973184756</string>
+    <string name="fb_login_protocol_scheme">fb2336992973184756</string>-->
+
+    <string name="facebook_app_id">362415681344468</string>
+    <string name="fb_login_protocol_scheme">fb362415681344468</string>
+    <string name="platform">Android</string>
+    <string name="AS_MIX_PANEL_TOKEN">47d94c658bf0b2710038b0749b371234</string>
+    <!--    <string name="test_MIX_PANEL_TOKEN"></string>-->
+    <!--    <string name="test_MIX_PANEL_TOKEN">9a387d33ea2ad822c80066ea570b6621</string>-->
+    <!--    <string name="test_MIX_PANEL_TOKEN">47d94c658bf0b2710038b0749b371234</string>-->
+    <string name="test_MIX_PANEL_TOKEN">9a387d33ea2ad822c80066ea570b6621</string>
+    <!--<string name="test_MIX_PANEL_TOKEN">446f2f2153352050337c2cefaf82f032</string> test ra-->
+    <!--<string name="test_MIX_PANEL_TOKEN">9a387d33ea2ad822c80066ea570b6621</string>  dev-->
+
+
+    <!--<string name="server_client_id">76469689893-792i5to7gddnll6hcjq1o2qm25glktot.apps.googleusercontent.com</string>-->
+
+    <string name="server_client_id">622816032142-0vcpa6esibjeip8h3gort3ogpa326i61.apps.googleusercontent.com</string>
+    <!--    <string name="server_client_id">622816032142-0vcpa6esibjeip8h3gort3ogpa326i61.apps.googleusercontent.com</string>  old-->
+    <!--        <string name="server_client_id">622816032142-d55hsgbf7mlmed0s4sd01kovbjlojei0.apps.googleusercontent.com</string>-->
+    <string name="default_notification_channel_id">SQORR_CHANNEL</string>
+
+    <string name="PAYPAL_SANBOX">sandbox_ktqtmsd4_zyrjfhvp8qzwjmgb</string>
+    <string name="PAYPAL_LIVE">production_4xdhwkxz_xsp8xpg42gr8hxp3</string>
+
+    <!-- on  board screen -->
+    <string name="lets_play">Let\'s Play</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="welcome_msg">Welcome to RodeoSqor. \nThe Game for the \nModern Fan.</string>
+    <string name="on_boarding_2">Everyone who makes\n the right picks wins.</string>
+    <!--    <string name="on_boarding_sub_2">Three game types and new game\ncards everyday keeps things\n fresh and fun.</string>-->
+    <string name="on_boarding_sub_2"></string>
+    <string name="on_boarding_3">No salary caps.\n Higher payouts.</string>
+    <!--    <string name="on_boarding_sub_3">Use easy-to-access stats \n to choose four to ten \n match-ups per cards.</string>-->
+    <string name="on_boarding_sub_3"></string>
+    <string name="on_boarding_4">Select a card and pick\n from 4-10 matchups.</string>
+    <!--    <string name="on_boarding_sub_4">Buy your roster.The more you \n pay,the more the payout.</string>-->
+    <string name="on_boarding_sub_4"></string>
+    <string name="on_boarding_5">Play as many cards as \n you would like for \n tokens or real cash.</string>
+    <!--    <string name="on_boarding_sub_4">Buy your roster.The more you \n pay,the more the payout.</string>-->
+    <string name="on_boarding_sub_5"></string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_hv_ac"><u>Already have an account ?</u></string>
+    <string name="forgot_pwd"><u>Forgot password?</u></string>
+    <string name="play_for_cash">Play for cash</string>
+    <string name="play_for_cash_desc">Deposit cash and play as many \ncards as you want.</string>
+    <string name="play_for_cash_verification">Requires verification that you are 21 or older and located \nin a state that allows legal betting.</string>
+    <string name="play_for_tokens">Play for tokens</string>
+    <string name="play_for_token_desc">Experience Rodeo Sqor\'s card gameplay with \na limited number of free tokens. </string>
+    <string name="play_for_token_verification">Start with 20 tokens.Additional tokens will only be provided \nif you are located in a state that does not allow legal betting.</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Common form fields-->
+    <string name="email_address">EMAIL ADDRESS</string>
+    <string name="email_hint">Enter your email address</string>
+    <string name="password">PASSWORD</string>
+    <string name="pwd_hint">Enter your password</string>
+    <string name="promo_header">PROMO CODE(OPTIONAL)</string>
+    <string name="promo_hint">Enter a promo code</string>
+    <string name="email_error_txt">Email already associated with an account.</string>
+    <string name="promo_error_txt">The code you entered is not valid</string>
+
+    <!-- play with cash-->
+    <string name="full_name">FULL NAME</string>
+    <string name="full_name_hint">Enter first and last name</string>
+    <string name="_dob">DATE OF BIRTH</string>
+    <string name="dob_hint">Enter DOB</string>
+    <!--    <string name="dob_hint">Must be over 18 years of age</string>-->
+    <string name="phone_number">PHONE NUMBER (OPTIONAL)</string>
+    <string name="phone_hint">Phone number</string>
+
+
+    <!--Sign up-->
+    <string name="choose_play">Choose a way to play </string>
+    <string name="sign_to_continue">Sign up to continue</string>
+    <string name="sign_up_with">SIGN UP WITH</string>
+
+    <!--Log in -->
+    <string name="log_with">LOG IN WITH </string>
+
+    <!--submit btn names-->
+    <string name="btn_log_in">Log In</string>
+    <string name="btn_sign_up">SIGN UP</string>
+    <string name="btn_submit">SUBMIT</string>
+
+    <!-- password recovery-->
+    <string name="pwd_recovery">Password Recovery</string>
+    <string name="pwd_rec_header">Enter your account email address</string>
+    <string name="pwd_rec_sub_header">We will send you an email with instructions on how to reset your password</string>
+
+    <!--  Profile -->
+    <string name="profile">Profile</string>
+    <string name="_account">Account</string>
+    <string name="_5_sign_up_bonus">$5 Sign up bonus</string>
+    <string name="join_now">JOIN NOW</string>
+    <string name="banner_image">Banner image</string>
+    <string name="dollar_image">Dollar image</string>
+    <string name="play_for_cash_now">PLAY FOR CASH NOW</string>
+    <string name="how_to_play">How to play</string>
+    <string name="game_rules_tutorial_videos_and_scoring">Game rules, tutorial videos, and scoring.</string>
+    <string name="_faqs">FAQs</string>
+    <string name="faq_hint">You\'ve got questions, we\'ve got answers.</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="customer_help_hint">We\'re here to help.</string>
+    <string name="_about">ABOUT</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="_trophy">Trophy</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="add_cash">Add Cash</string>
+    <string name="show_dollar">Show Dollar</string>
+    <string name="_transaction">Transactions</string>
+    <string name="transaction_history_and_funds">Transaction history and add/withdraw funds.</string>
+    <string name="_rules">Rules</string>
+    <string name="_chevron">Chevron</string>
+    <string name="faq_image">FAQ Image</string>
+    <string name="_support">support</string>
+    <string name="privacy_icon">privacy icon</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms_of_service">Terms of service</string>
+    <string name="legal_icon">legal icon</string>
+    <string name="about_vetnos">About Vetnos</string>
+    <!-- TransactionsActivity Screen-->
+    <string name="_transactions">Transactions</string>
+    <string name="add_funds">Add funds</string>
+    <string name="add_new_card">Use new card</string>
+    <string name="edit_card">Edit card</string>
+    <string name="add_funds_to_play_for_cash">$ Add funds to play for cash</string>
+    <string name="token_balance">Token balance</string>
+    <string name="cash_balance">Cash balance</string>
+    <string name="_wager">WAGER</string>
+    <string name="have_a_promo_code_enter_it_here">Have a promo code? Enter it here</string>
+    <!--Profile Edit-->
+    <string name="_profile">Profile</string>
+    <string name="btn_done">Done</string>
+
+    <!--Change Password-->
+    <string name="change_password">Change Password</string>
+    <string name="old_password_label">OLD PASSWORD</string>
+    <string name="new_password_label">NEW PASSWORD</string>
+    <string name="confirm_new_password_label">CONFIRM NEW PASSWORD</string>
+    <string name="submit_btn">SUBMIT</string>
+    <string name="at_least_8_characters">At least 8 characters</string>
+    <string name="at_least_one_number">At least one number</string>
+    <string name="one_special_character"><![CDATA[One special character (!"#$%&\'()*+,-./:;<=>?@[\]^_{|}~)]]></string>
+    <string name="add_new_credit_debit_card">Use new credit/debit card</string>
+    <string name="custom_amount_hint">Custom amount</string>
+    <string name="deposit_amount">Deposit amount</string>
+    <string name="payment_type">Payment type</string>
+    <string name="paypal">PayPal</string>
+    <string name="card_number">card number</string>
+    <string name="card_no_hint">1234 5678 9101 2131</string>
+    <string name="expiration_date">expiration date</string>
+    <string name="security_code">Security code</string>
+
+    <string name="first_and_last">First and last</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="_street">Street</string>
+    <string name="_city">city</string>
+    <string name="_state">State</string>
+    <string name="zip_code">zip code</string>
+
+    <!--list-->
+    <string-array name="player_names">
+        <item>Stephen Curry</item>
+        <item>Enes Kanter</item>
+        <item>Andre Igodala</item>
+    </string-array>
+
+    <string-array name="player_price">
+        <item>-1.0</item>
+        <item>-0.5</item>
+        <item>-1.5</item>
+    </string-array>
+
+    <string-array name="player_positions">
+        <item>Point Gaurd</item>
+        <item>Center</item>
+        <item>Center</item>
+    </string-array>
+
+    <string-array name="player_matches">
+        <item>  POR vs GSW</item>
+        <item> POR vs GSW</item>
+        <item> TOR vs MIL</item>
+    </string-array>
+
+    <string-array name="player_timings">
+        <item>1h 10m </item>
+        <item>9h 58m</item>
+        <item>1h 44m</item>
+    </string-array>
+
+
+    <string-array name="player_names_two">
+        <item>Kawhi Leaonard</item>
+        <item>Khris middleton</item>
+        <item>Marc Gasol</item>
+    </string-array>
+
+    <string-array name="player_price_two">
+        <item> 1.0 </item>
+        <item>0.5</item>
+        <item>1.5</item>
+    </string-array>
+
+    <string-array name="player_positions_two">
+        <item>Point Gaurd </item>
+        <item>Small Forward</item>
+        <item>Center</item>
+    </string-array>
+
+    <string-array name="player_matches_two">
+        <item>POR vs GSW</item>
+        <item>TOR vs MIL</item>
+        <item>OR vs MIL</item>
+    </string-array>
+
+    <string-array name="player_timings_two">
+        <item> 9h 58m </item>
+        <item>1h 33m</item>
+        <item>1h 44m</item>
+    </string-array>
+
+    <string-array name="first_player_points">
+        <item>8.9</item>
+        <item>11.1</item>
+        <item>5.9</item>
+        <item>4.6</item>
+        <item>10.3</item>
+        <item>2.2</item>
+        <item>0.9</item>
+        <item>-2.7</item>
+    </string-array>
+
+    <string-array name="second_player_points">
+        <item>5.6</item>
+        <item>14.9</item>
+        <item>6.1</item>
+        <item>7.3</item>
+        <item>5.0</item>
+        <item>3.5</item>
+        <item>0.8</item>
+        <item>-2.0</item>
+    </string-array>
+
+    <string-array name="players_playing_positions">
+        <item>Three Points Field Goals</item>
+        <item>Field Goals</item>
+        <item>"Free Throws</item>
+        <item>Rebounds</item>
+        <item>Assists</item>
+        <item>Steals</item>
+        <item>Blocked Shots</item>
+        <item>Turnovers</item>
+    </string-array>
+
+    <string-array name="picks">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="multiplier">
+        <item>x10</item>
+        <item>x18</item>
+        <item>x35</item>
+        <item>x70</item>
+        <item>x125</item>
+        <item>x250</item>
+        <item>x500</item>
+    </string-array>
+    <string-array name="winpayout">
+        <item>100</item>
+        <item>180</item>
+        <item>350</item>
+        <item>700</item>
+        <item>1250</item>
+        <item>2500</item>
+        <item>5000</item>
+    </string-array>
+
+
+    <string name="your_location">YOUR LOCATION</string>
+    <string name="date_of_birth">DATE OF BIRTH</string>
+    <string name="_edit">Edit</string>
+    <string name="change_your_password">Change your password</string>
+    <string name="enter_your_old_password">Enter your old password</string>
+    <string name="enter_a_new_password">Enter a new password</string>
+    <string name="re_enter_new_password">Re-enter new password</string>
+    <string name="you_have_entered_an_incorrect_email_or_password">You have entered an incorrect email or password.</string>
+    <string name="enable_location_txt">First, we need to verify your location to make sure you are in a state that legally allows cash wagers. Please allow Rodeo Sqor to access your location.</string>
+    <string name="its_game_time">It\'s almost game time!</string>
+
+
+    <string name="pare">
+    M4000.710,1000.400l-726.162,0l300.77,-1100.560l726.162,0z </string>
+    <string name="square">
+  M 0,0 L 100,0  L  70,100 L 0,100z </string>
+
+    <string name="player_stats">Season Averages</string>
+
+    <!--web-->
+
+    <!--Sqor TV-->
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+    <!--Location msgs-->
+    <string name="locationre_msg">Unfortunately,we are not detecting your location within the venu where play is allowed. If this is incorrect, please wait a few seconds and click on re-verify.</string>
+    <string name="location_msg">Unfortunately, due to legal restrictions you are not allowed to play for cash in this location.</string>
+    <string name="location_title">You may only play for tokens in</string>
+
+    <string name="enable_location_msg">Due to legal restriction, you \nmust enable Location Services \n in Settings > Privacy > Location \nServices in order to play for \ncash</string>
+    <string name="enable_location_title">Enable Location \nServices</string>
+
+    <!--Login msgs-->
+    <string name="dob_msg">Unfortunately, due to legal \nrestrictions you are not allowed \nto play for cash.</string>
+    <string name="dob_title">You may only play for \ntokens under the age of \n18</string>
+
+    <!--matchs msgs-->
+    <string name="close_msg">Your progress will be lost</string>
+    <string name="close_title"> Are you sure you want \nto close this card?</string>
+
+    <string name="cash_confirm"> Are you sure you \nwant to play this card \nfor </string>
+
+    <!--signup msgs-->
+    <string name="signup_dob_msg">Federal laws do not permit you \nto play for cash</string>
+    <string name="signup_dob_title">You may only play for \ntokens under the age oof \n21</string>
+
+
+    <string name="rec_pwd">Please check your email for \npassword reset instructions.</string>
+
+    <!-- league ids-->
+
+    <!--
+    {
+        "leagueId": "547e6d5057489582581c7d83",
+        "leagueName": "National Football League",
+        "leagueAbbreviation": "NFL",
+        "sportId": "547e69f257489582581c7d7f",
+        "sportName": "Football",
+        "color": null
+    },
+    {
+        "leagueId": "547e6e1e57489582581c7d8b",
+        "leagueName": "National Basketball Assoc.",
+        "leagueAbbreviation": "NBA",
+        "sportId": "547e6dfb57489582581c7d87",
+        "sportName": "Basketball",
+        "color": null
+    },
+    {
+        "leagueId": "54b47ce6c85e70081a1637a2",
+        "leagueName": "National Hockey League",
+        "leagueAbbreviation": "NHL",
+        "sportId": "54b46eae0745e1bc5d373787",
+        "sportName": "Hockey",
+        "color": null
+    },
+    {
+        "leagueId": "54e634250e03fdfe2d8569cd",
+        "leagueName": "Nascar",
+        "leagueAbbreviation": "NASCAR",
+        "sportId": "54e633480e03fdfe2d8569c9",
+        "sportName": "Motor",
+        "color": null
+    },
+    {
+        "leagueId": "551351dc37b279523d469be2",
+        "leagueName": "Major League Baseball",
+        "leagueAbbreviation": "MLB",
+        "sportId": "55135140085b9436336e9565",
+        "sportName": "Baseball",
+        "color": null
+    },
+    {
+        "leagueId": "588312f280e08f06fb4e5338",
+        "leagueName": "English Premier League",
+        "leagueAbbreviation": "EPL",
+        "sportId": "5883124580e08f06fb4e532e",
+        "sportName": "Soccer",
+        "color": null
+    },
+    {
+        "leagueId": "588d147080e08f06fb4ecbd7",
+        "leagueName": "Spain Liga Primera",
+        "leagueAbbreviation": "LA-LIGA",
+        "sportId": "5883124580e08f06fb4e532e",
+        "sportName": "Soccer",
+        "color": null
+    },
+    {
+        "leagueId": "58e564ea80e08f06fb5234f2",
+        "leagueName": "Major League Soccer",
+        "leagueAbbreviation": "MLS",
+        "sportId": "5883124580e08f06fb4e532e",
+        "sportName": "Soccer",
+        "color": null
+    },
+    {
+        "leagueId": "5c78ffacba8cfd62d4060620",
+        "leagueName": "NCAA Men's Basketball",
+        "leagueAbbreviation": "NCAAMB",
+        "sportId": "547e6dfb57489582581c7d87",
+        "sportName": "Basketball",
+        "color": null
+    },
+    {
+        "leagueId": "5ca4dd12ec0c61b7f5d822ef",
+        "leagueName": "PGA",
+        "leagueAbbreviation": "PGA",
+        "sportId": "5ca4ddb1ec0c61b7f5d8372b",
+        "sportName": "Golf",
+        "color": null
+    }
+]-->
+
+    <string name="servererror_msg">An unknown error occurred. Please try again later.</string>
+
+
+    <string name="mlb_lg_id">7</string>
+    <string name="nba_lg_id">8</string>
+    <string name="epl_lg_id">11</string>
+    <string name="pro_lg_id">31</string>
+    <string name="LALIGA_lg_id">9</string>
+    <string name="nhl_lg_id">10</string>
+    <string name="nascar_lg_id">12</string>
+    <string name="NCAAMB_lg_id">29</string>
+    <string name="nfl_lg_id">13</string>
+    <string name="mls_lg_id">15</string>
+    <string name="pga_lg_id">16</string>
+    <string name="nccfb_id">18</string>
+    <string name="wildcard_id">17</string>
+    <string name="IndyCAR_id">29</string>
+
+<!--    <string name="mlb_lg_id">551351dc37b279523d469be2</string>-->
+<!--    <string name="nba_lg_id">547e6e1e57489582581c7d8b</string>-->
+<!--    <string name="epl_lg_id">588312f280e08f06fb4e5338</string>-->
+<!--    <string name="pro_lg_id">60acd782ad4b117ec15bb99a</string>-->
+<!--    <string name="LALIGA_lg_id">588d147080e08f06fb4ecbd7</string>-->
+<!--    <string name="nhl_lg_id">54b47ce6c85e70081a1637a2</string>-->
+<!--    <string name="nascar_lg_id">54e634250e03fdfe2d8569cd</string>-->
+<!--    <string name="NCAAMB_lg_id">5c78ffacba8cfd62d4060620</string>-->
+<!--    <string name="nfl_lg_id">547e6d5057489582581c7d83</string>-->
+<!--    <string name="mls_lg_id">58e564ea80e08f06fb5234f2</string>-->
+<!--    <string name="pga_lg_id">5ca4dd12ec0c61b7f5d822ef</string>-->
+<!--    <string name="nccfb_id">5d9f56eeb762fc5fcb8660cf</string>-->
+<!--    <string name="wildcard_id">5d6eb800c54b8b41d010626b</string>-->
+
+    <string name="check_out_faq"><u>Check out our FAQ</u></string>
+
+    <!--States-->
+    <string-array name="states_array">
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Mexico</item>
+        <item>New Jersey</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>WashingtonDC</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+        <item>Ontario</item>
+        <item>Quebec</item>
+        <item>Nova Scotia</item>
+        <item>New Brunswick</item>
+        <item>Manitoba</item>
+        <item>British Columbia</item>
+        <item>Prince Edward Island</item>
+        <item>Saskatchewan</item>
+        <item>Alberta</item>
+        <item>Newfoundland and Labrador</item>
+
+    </string-array>
+
+    <!--    ACH TYPES-->
+
+    <!--States-->
+    <string-array name="achtypes_array">
+        <item>Business Checking</item>
+        <item>Business Savings</item>
+        <item>Personal Checking</item>
+        <item>Personal Savings</item>
+
+    </string-array>
+
+
+    <!--States-->
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <!--        <item>Others</item>-->
+
+    </string-array>
+
+    <!-- Withdraw Strings -->
+    <string name="withdraw_txt">Promo funds are not available for withdrawal.You currently have $0 in promo funds.</string>
+    <string name="process_request">Processing request</string>
+    <string name="withdraw_under_msg">Withdrawals under $100 will be mailed in the next business day. \n Please allow 7-10 business days to receive your check by USPS First Class mail. </string>
+    <string name="withdraw_over_msg">Please allow 7-10 business days for funds to be deposited into your account</string>
+    <!--    <string name="withdraw_over_msg">Withdrawals over $100 will be mailed in 3 business days. \n Please allow 7-10 business days to receive your check by USPS First Class mail. </string>-->
+
+    <!--Check out-->
+    <string name="_change"><u>Change</u></string>
+    <string name="deduct_msg">Deducted from your funds</string>
+    <string name="remaining_bal_txt">Remaining balance</string>
+    <string name="_checkout">Checkout</string>
+    <string name="_raise">Raise a Ticket</string>
+    <string name="token_insufficient">You cannot add more tokens to your funds, In order to play this card you must adjust your wager or switch to cash by adding funds or using another form of payment.</string>
+
+    <string name="save_card_txt">Save this card for faster checkout in the future</string>
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="must_pick">CHOOSE 4 MORE PLAYERS TO FINALIZE ENTRY</string>
+    <string name="must_pick_redo">CHOOSE 3 MORE PLAYERS TO FINALIZE ENTRY</string>
+    <string name="must_pick_pro">CHOOSE 2 MORE PLAYERS TO FINALIZE ENTRY</string>
+    <string name="must_pick_go">PICK ALL 9 TO CONTINUE</string>
+    <!--Location msgs-->
+    <string name="token_to_cash_msg">Only logged in users,with \ncomplete account profiles can \nplay for cash or withdraw \nfunds.</string>
+    <string name="token_to_cash_title">You must complete your \nprofile to add funds</string>
+    <string name="game_start">First game starts in</string>
+
+    <string name="age_to_cash_title">Please confirm your age in \nProfile page </string>
+
+
+    <string name="switch_to_cash_header"> Adding funds will switch to cash mode.</string>
+    <string name="switch_to_cash_msg"> You cannot switch back to tokens.</string>
+
+
+    <string name="bingo_2"> You start off with an empty card grid with the position markers unique to each card. Your card is shown below:</string>
+    <string name="bingo_3"> As you make your selections, the grid numbers are replaced with a checkmark. This continues until all 9 squares are filled out with checkmarks.</string>
+    <string name="bingo_4"> Once the sporting events are complete, your correct selections will be given an “O” and your incorrect selections will be given an “X”</string>
+    <string name="bingo_5"> A winning selection would be 3 O’s in a row, either up, down, across, or diagonally.</string>
+    <string name="bingo_6"> Multiple combinations of 3 in a row (or better) have even higher payout possibilities.</string>
+    <string name="bingo_7"> Making all 9 selections correct gives you the highest prize possible.</string>
+    <string name="bingo_8"> - Malfunctions void all prizes and plays</string>
+    <string name="bingo_9"> - Actual Prizes Determined by Bingo [or other applicable Class II game] Play. Other Displays for Entertainment Only.</string>
+    <string name="bingo_10">- Odds notification. If the odds of winning any advertised top prize exceeds 100 million to one, the Player Interface must display: “Odds of winning the advertised top prize exceeds 100 million to one</string>
+
+
+    <string name="bingo_1">Play Tac Toe is a bingo game consisting of player-to-player matchups in each of the 9 squares of the grid. Players win by selecting their favored player in each of the 9 squares. Once the actual sporting events are complete, if your selected player in a matchup beats the other player, your square is marked with an “O”. You win by getting at least 3 squares in a row either up or down, across, or diagonally. You win even more by getting additional sets of 3 in a row or winning all 9 squares.</string>
+    <string name="bingo_gep">Bingo results depend on a game ending pattern or patterns. Our game ending pattern is in multiple 2 block segments, each qualified by the correct selection of the athlete results. The following are game ending patterns:</string>
+</resources>

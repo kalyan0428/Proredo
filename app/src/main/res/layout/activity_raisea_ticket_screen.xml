@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.RaiseaTicketScreen">
+
+    <include layout="@layout/custom_profile_toolbar_layout" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/his_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_ten"
+            android:background="@drawable/edit_border"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/exo_extrabold"
+            android:padding="@dimen/txt_size_15"
+            android:text="History"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_17"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_ten"
+            android:fontFamily="@font/exo_extrabold"
+            android:padding="@dimen/txt_size_15"
+            android:text="Tell us what went wrong"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_17"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_ten"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_border_gray"
+                android:padding="@dimen/size_five"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/ticket_spin"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_17"
+                    android:textStyle="bold"
+                    android:layout_height="55dp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="@dimen/size_ten"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:fontFamily="@font/exo_extrabold"
+                android:text="Issues"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_17"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ticket_des"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/txt_size_15"
+                android:background="@drawable/edit_border_gray"
+                android:hint="Description"
+                android:maxLines="8"
+                android:padding="@dimen/size_ten"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ticket_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/login_bg_disable"
+            android:fontFamily="@font/exo_extrabold"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/btn_dis_text"
+            android:textSize="@dimen/normal_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

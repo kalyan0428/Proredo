@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/size_ten"
+            android:layout_weight="0.50">
+
+            <ImageView
+                android:id="@+id/pager_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitCenter"
+                android:src="@drawable/prorodeo_small" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/exo_extrabolditalic"
+            android:gravity="center"
+            android:text="@string/welcome_msg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_28" />
+
+        <TextView
+            android:id="@+id/descTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="center|top"
+            android:lineSpacingExtra="3.5dp"
+            android:paddingLeft="30dp"
+
+            android:paddingRight="30dp"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/txt_size_23" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

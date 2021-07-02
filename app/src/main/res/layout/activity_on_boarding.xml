@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".views.OnBoarding">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start_layout"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:id="@+id/start_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/pagerBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_bg_red"
+            android:fontFamily="@font/exo_bold"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="@string/lets_play"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textSize="@dimen/normal_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/btnSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_grey"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_size"
+                android:textStyle="normal"
+                android:fontFamily="@font/exo_regular"/>
+
+            <TextView
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_grey"
+                android:gravity="center"
+                android:text="@string/log_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_size"
+                android:fontFamily="@font/exo_regular"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_layout"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="32dp"
+        app:ci_animator="@animator/alpha"
+        app:ci_drawable="@drawable/prog_ind_sel"
+        app:ci_drawable_unselected="@drawable/prog_ind"
+        app:ci_height="4dp"
+        app:ci_margin="0.75dp"
+        app:ci_width="27dp" />
+
+
+</RelativeLayout>

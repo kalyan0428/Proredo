@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sport.playsqorr">
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <!--
+    This permission is required to allow the application to send
+    events and properties to Mixpanel.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+      This permission is optional but recommended so we can be smart
+      about when to send data.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+      This permission is optional but recommended so events will
+      contain information about bluetooth state
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- permission required to use Alarm Manager -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:allowBackup="false"
+        android:configChanges="orientation|screenSize"
+        android:icon="@drawable/prorodeo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity android:name=".views.SqorrAvgs"></activity>
+        <activity android:name=".views.Matchup_WinPlayGoTimeTwo" />
+        <activity
+            android:name=".views.RasieTicketChatScreen"
+            android:screenOrientation="portrait" />
+        <activity android:name=".views.RaiseTicketChatScreen" />
+        <activity
+            android:name=".views.RaiseTicketHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.TicketChatHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.TicketHistoryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.RaiseaTicketScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Matchup_NewWinScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.TransNewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.MatchupScreen_PlayAPick"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.NFLLeaderBoardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.MyCardsMore_PlayPickGo_MatchupScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.PlayPickGo_MatchupScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Withdraw_ACH"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.HomeCards_MoreScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.MyCards_MoreScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.MoreCards_MatchupScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.MatchupScreen_false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.LeaderBoardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.UserNewAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.WithdrawlPaypalScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Withdraw_paypal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.MoreCardsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Notifications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.TvFullScreenVideo"
+            android:screenOrientation="landscape" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".views.ReferDetials"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Referfriend"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".SensorService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.CounterService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".services.ResponseReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name=".SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="uk.ac.shef.oak.ActivityRecognition.RestartSensor" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".push.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".services.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.MyIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity
+            android:name=".views.CheckoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.WithdrawFunds"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".services.CardsBackground"
+            android:exported="true" />
+
+        <activity
+            android:name=".views.HowToPlay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.WebScreens"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW"/> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE"/> -->
+            <!-- <data -->
+            <!-- android:host="example.com" -->
+            <!-- android:scheme="https"/> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".views.UserLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.AddNewCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.EditCreditCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.MatchupScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.ProfileEdit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.AddFunds"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.TransactionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="example.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.PlayWithTokens"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.PlayWithCash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.OnBoarding"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+<activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".views.PasswordRecovery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

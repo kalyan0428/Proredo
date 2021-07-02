@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <include
+            layout="@layout/tool_bar_players_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Adding bottom sheet after main content -->
+
+
+
+    <!-- Adding bottom sheet after main content -->
+    <include layout="@layout/content_main_winplayshow" />
+
+
+
+<!--    <include layout="@layout/winplayshow_wager" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

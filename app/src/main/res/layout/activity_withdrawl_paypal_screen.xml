@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.WithdrawFunds">
+
+    <include layout="@layout/custom_profile_toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/toolbar_sub_id"
+        android:scrollbarThumbVertical="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:text="Cash balance"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/txt_size_20" />
+
+                <TextView
+                    android:id="@+id/tvCashBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:text="$300"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/txt_size_20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:text="Withdraw balance"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/txt_size_20" />
+
+                <TextView
+                    android:id="@+id/tvWithdrawBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:text="$300"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/txt_size_20" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvPromoBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="14dp"
+                android:fontFamily="@font/exo_regular"
+                android:text="@string/withdraw_txt"
+                android:textColor="@color/medium_gray"
+                android:textSize="@dimen/small_bf_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/exo_bold"
+                android:text="Withdrawal amount"
+                android:textColor="@color/header"
+                android:textSize="@dimen/txt_size_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:elevation="0.5dp">
+
+                <EditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:enabled="false"
+                    android:editable="false"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/exo_regular"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:textColor="@color/header" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/amountView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/sep_view_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/exo_extrabold"
+                android:text="Withdrawl Through Paypal"
+                android:textColor="#202020"
+                android:textSize="@dimen/txt_size_18"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_five"
+                    app:cardElevation="0.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Label_TextView"
+                            android:text="EmailID on Payapl" />
+
+                        <EditText
+                            android:id="@+id/et_paypal_address"
+                            style="@style/Label_EditText"
+                            android:hint="@string/email_hint"
+                            android:inputType="textPassword" />
+
+                        <View
+                            android:id="@+id/paypal_view"
+                            style="@style/Label_ViewLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Label_TextView"
+                            android:text="Re Enter Email ID on Paypal Account" />
+
+                        <EditText
+                            android:id="@+id/et_repaypal_address"
+                            style="@style/Label_EditText"
+                            android:hint="@string/email_hint"
+                            android:inputType="textEmailAddress" />
+
+                        <View
+                            android:id="@+id/email_view"
+                            style="@style/Label_ViewLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    style="@style/Label_EditText"
+                    android:text="You must have vaild PayPal email ID. if don't have  a PayPal account, Please create one. " />
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:layoutDirection="ltr"
+                    android:text="By entering my account information below, I hereby authorize Vetnos, LLC to credit my account via PayPal." />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llPaypal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/price_bg"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/ic_cc_paypal"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/paypal"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/txt_size_17" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rootContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"></LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="#EAEAEA" />
+
+            <RelativeLayout
+                android:id="@+id/rl_add_new_bank_account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/add_card_bg"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivGeneric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="18dp"
+                    android:src="@drawable/ic_cc_generic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivGeneric"
+                    android:fontFamily="@font/exo_regular"
+                    android:text="add_new_bank_account"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/txt_size_18" />
+
+
+            </RelativeLayout>
+
+            <!--<include layout="@layout/mailing_info"/>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#191919"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:id="@+id/llwithdraw_funds"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_gray_bg">
+
+            <TextView
+                android:id="@+id/tvWithdrawFunds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_extrabold"
+                android:gravity="center"
+                android:text="WITHDRAW FUNDS"
+                android:textAllCaps="true"
+                android:textColor="#727272"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

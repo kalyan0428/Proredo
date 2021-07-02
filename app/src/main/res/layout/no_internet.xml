@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/primary_color"
+    android:weightSum="3"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_weight="2.2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/txt_size_14"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:text="Turn Off Airplane Mode or\n
+Use Wi-Fi to Access Data" />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:textSize="@dimen/txt_size_14"
+        android:id="@+id/settings"
+        android:text="SETTINGS" />
+</LinearLayout>

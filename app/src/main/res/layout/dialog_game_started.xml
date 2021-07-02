@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marign_normal"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/marign_normal"
+        android:background="@drawable/background_alert_view"
+        android:paddingStart="10dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:id="@+id/tvGameStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/exo_bold"
+            android:gravity="center"
+            android:textSize="@dimen/small_size"
+            android:text="CARD CONFIRMED!"
+            android:textAllCaps="true"
+            android:textColor="@color/darkest_gray" />
+
+        <TextView
+            android:id="@+id/tvGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGameStarted"
+           android:textSize="@dimen/txt_size_28"
+            android:layout_marginTop="-2dp"
+            android:fontFamily="@font/exo_extrabolditalic"
+            android:gravity="center"
+            android:text="NBA Showdown"
+            android:textColor="@color/header" />
+
+        <LinearLayout
+            android:id="@+id/linearViewTime"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGame"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_access_time_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvMatchStartedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo_bold"
+                android:textSize="@dimen/small_size"
+                android:layout_gravity="center"
+                android:text="First match started in 9h 55m"
+                android:textColor="@color/medium_gray" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnGotIt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/exo_extrabold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="@dimen/size_five"
+            android:layout_marginRight="@dimen/size_five"
+            android:layout_below="@+id/linearViewTime"
+            android:background="@color/sqorr_red"
+            android:text="GOT IT"
+            android:textAllCaps="true"
+            android:layout_marginBottom="@dimen/txt_size_30"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_size" />
+        <com.google.android.material.button.MaterialButton
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearViewTime"
+            android:layout_marginStart="@dimen/marign_normal"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/marign_normal"
+            android:layout_marginBottom="@dimen/marign_normal"
+            android:drawablePadding="@dimen/margin_small"
+            android:fontFamily="@font/exo_semibold"
+            android:gravity="center"
+            android:text="Got IT"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/player_select_bg_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+
+<LinearLayout
+    android:layout_width="60dp"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:background="@drawable/background_white_circle"
+    android:layout_height="60dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewFootBall"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+       android:layout_gravity="center"
+        android:src="@drawable/rodeo"
+        app:civ_border_overlay="true" />
+</LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

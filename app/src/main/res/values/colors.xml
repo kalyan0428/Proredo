@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#363636</color>
+    <color name="colorPrimaryDark">#363636</color>
+    <color name="colorAccent">#D32027</color>
+    <color name="primary_color">#363636</color>
+    <color name="hint">#c8c8c8</color>
+    <color name="text_color_new">#494949</color>
+    <color name="black">#000000</color>
+    <color name="bg_green">#57AE50</color>
+    <color name="white">#ffffff</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_video_transparent">#88000000</color>
+    <color name="color_black">#000000</color>
+
+    <color name="color_unplayed">#323232</color>
+    <color name="color_buffered">#b2b2b2</color>
+    <color name="orange_strip">#Fd9145</color>
+
+    <color name="light_grey_semi_transparent">#80313435</color>
+    <color name="gray">#E4E4E4</color>
+    <color name="gray_light">#EBEBEB</color>
+    <color name="gray_pick">#E5E5E5</color>
+    <color name="gray_line">#EBEBEB</color>
+    <color name="pick_prize_bg">#2f2f2f</color>
+    <color name="init_status_bar_color">#252525</color>
+    <color name="second_status_bar_color">#E0E0E0</color>
+    <color name="second_status_bar_color_new">#E0E0E0</color>
+
+    <color name="third_status_bar_color">#B06530</color>
+
+    <color name="live">#BACCBA16</color>
+
+    <color name="colorAccentWager">#202020</color>
+
+    <!-- signup-->
+    <color name="signup_bg">#F9F9F9</color>
+
+    <!--login-->
+    <color name="btn_dis_text">#AEAEAE</color>
+    <color name="btn_dis_bg">#8C8C8C</color>
+    <color name="btn_dis_b">#F7F9F9</color>
+
+    <!-- Account-->
+    <color name="header">#202020</color>
+    <color name="sep_view_color">#ececec</color>
+    <color name="acc_hint_color">#a6a6a6</color>
+
+    <color name="validation_color">#3F3F3F</color>
+
+    <!--Match ups-->
+    <color name="img_bg">#434343</color>
+    <color name="bg_leader">#1A323E</color>
+
+
+    <!-- Game + Color Codes- -->
+
+    <color name="soccer_color_org">#BC438C</color>
+    <color name="base_ball_color_org">#C52F2F</color>
+    <color name ="basket_ball_color_org">#E6823B</color>
+    <color name="foot_ball_color_org">#006DD2</color>
+    <color name="golf_color_org">#058F33</color>
+    <color name="hockey_color_org">#3E8CE1</color>
+    <color name="mma_color_org">#8B53B6</color>
+    <color name="car_race_color_org">#05BBC7</color>
+    <color name="tennis_color_org">#C8D01F</color>
+
+<!--A bit dark color-->
+    <color name="soccer_color">#832f62</color>
+    <color name="base_ball_color">#902323</color>
+    <color name ="basket_ball_color">#cb641a</color>
+    <color name="foot_ball_color">#004f99</color>
+    <color name="golf_color">#034a1a</color>
+    <color name="hockey_color">#1f70c7</color>
+    <color name="mma_color">#6b3d8f</color>
+    <color name="car_race_color">#03747c</color>
+    <color name="tennis_color">#959b17</color>
+
+    <color name="no_cards_color">#EAEAEA</color>
+    <color name="add_fund_clr">#727272</color>
+
+
+
+    <color name="darkred">#8b0000</color>
+    <color name="green">#68B85F</color>
+
+
+
+    <!-- As Per Style Guide -->
+    <!--Input Fields-->
+
+    <!--<color name="darkest_gray">#202020</color>-->
+    <!--<color name="dark_gray">#363636</color>-->
+    <!--<color name="medium_gray">#8C8C8C</color>-->
+    <!--<color name="light_gray">#f2f2f2</color>-->
+    <!--<color name="extra_light_gray">#EAEAEA</color>-->
+  <!--  <color name="darkest_gray">#202020</color>
+    <color name="dark_gray">#363636</color>
+    <color name="medium_gray">#8C8C8C</color>-->
+    <!--<color name="error_text_color">#D32027</color>-->
+   <!-- <color name="light_gray">#f2f2f2</color>
+    <color name="extra_light_gray">#EAEAEA</color>-->
+
+
+
+    <color name="error_text_color">#D32027</color>
+    <color name="medium_gray">#8C8C8C</color>
+    <color name="darkest_gray">#202020</color>
+    <color name="dark_gray">#363636</color>
+    <color name="green_">#57AE50</color>
+    <color name="light_gray">#EAEAEA</color>
+    <color name="extra_light_gray">#F2F2F2</color>
+
+    <color name="sqorr_red">#D32027</color>
+    <color name="sqorr_blue">#3B74BA</color>
+<!--
+
+    <color name="filled_button_color">2dp</color>
+    <color name="letsplay_button_height_color">50dp</color>
+    <color name="play_button_color">40dp</color>
+    <color name="small_button_color">35dp</color>
+    <color name="joinnow_button_color">32dp</color>
+-->
+
+
+    <color name="wg_sep_clr">#2D2D2D</color>
+
+
+    <color name="p0">#D82052</color>
+    <color name="p1">#1747B6</color>
+    <color name="p2">#E35205</color>
+    <color name="p3">#33006F</color>
+    <color name="p4">#003831</color>
+    <color name="p5">#860038</color>
+    <color name="p6">#66CC33</color>
+    <color name="p7">#4A3432</color>
+    <color name="p8">#0000FF</color>
+    <color name="p9">#006AFF</color>
+
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="50dp"
+    android:viewportWidth="200"
+    android:viewportHeight="50">
+
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M 200 0 L 2 0 L 0 50 L 180 500 L 200 0" />
+<!--    <path-->
+<!--        android:fillColor="@color/init_status_bar_color"-->
+<!--        android:pathData="M 200 0 L 20 0 L 0 50 L 180 50 L 200 0" />-->
+
+</vector>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:id="@+id/llTotal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/mixed"
+        android:weightSum="2">
+
+        <View
+            android:id="@+id/cardColor"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#E05153" />
+
+        <FrameLayout
+            android:id="@+id/imagesView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/player1Img"
+                    android:layout_width="52dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/player2Img"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="-20dp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fimg1"
+                    android:layout_width="52dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/fimg2"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="-20dp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/count_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_bold"
+                android:text="8 / 8"
+                android:textColor="#fff"
+                android:textSize="@dimen/txt_size_20" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center|start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/title_sett"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="8dp"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tvCardTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.5"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/exo_extrabolditalic"
+                    android:gravity="center|left"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="MLB late snack"
+                    android:textColor="@color/darkest_gray"
+                    android:textSize="@dimen/normal_size" />
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/stas_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvCardTitleCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/size_five"
+                        android:drawableLeft="@drawable/ic_stack"
+                        android:drawablePadding="@dimen/size_five"
+                        android:fontFamily="@font/exo_extrabold"
+                        android:gravity="center"
+                        android:padding="@dimen/size_five"
+                        android:text="20"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wonstas"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/parell_green"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvCardw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/exo_extrabold"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:text="WIN"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_ten" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:src="@drawable/ic_cash_sm_white"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/mywins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="3dp"
+                            android:fontFamily="@font/exo_extrabolditalic"
+                            android:gravity="center"
+                            android:text="22"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/txt_size_13"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/stas"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/parell_gray"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvCardwin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/exo_extrabold"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:text="CANCELLED"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <LinearLayout
+                    android:id="@+id/llCardType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivMatchUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_matchup" />
+
+                    <TextView
+                        android:id="@+id/tvPlus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo_bold"
+                        android:text="  +  "
+                        android:textColor="@color/medium_gray"
+                        android:textSize="@dimen/small_bf_size" />
+
+                    <ImageView
+                        android:id="@+id/ivOverUnder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_overunder" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvMatchUpType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/llCardType"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:gravity="center_vertical"
+                    android:text="MATCH-UP"
+                    android:textAllCaps="true"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/tvStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:drawableStart="@drawable/ic_access_time_black_24dp"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/exo_bold"
+                    android:text="45m"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/small_size" />
+
+                <LinearLayout
+                    android:id="@+id/llLive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="-3dp"
+                    android:background="@drawable/card_live"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/exo_extrabolditalic"
+                        android:gravity="center"
+                        android:text="LIVE"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_bf_size" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="start|center"
+                android:layout_weight="3"
+
+                android:gravity="center|start">
+
+                <TextView
+                    android:id="@+id/tvMatchUpType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/ic_matchup"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/exo_extrabold"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:text="MATCH-UP"
+                    android:textAllCaps="true"
+                    android:textColor="@color/btn_dis_bg"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/tvStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:drawableStart="@drawable/ic_access_time_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/btn_dis_bg"
+                    android:fontFamily="@font/exo_bold"
+                    android:text="45m"
+                    android:textColor="@color/btn_dis_bg"
+                    android:textSize="@dimen/small_size" />
+
+            </RelativeLayout>
+-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

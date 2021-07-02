@@ -1,0 +1,451 @@
+﻿[
+  {
+    "stateName": "Alabama",
+    "stateCode": "AL",
+    "cash": "YES",
+    "age":  19,
+    "country": "USA"
+  },
+  {
+    "stateName": "Alaska",
+    "stateCode": "AK",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Arizona",
+    "stateCode": "AZ",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Arkansas",
+    "stateCode": "AR",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "California",
+    "stateCode": "CA",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Colorado",
+    "stateCode": "CO",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Connecticut",
+    "stateCode": "CT",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Delaware",
+    "stateCode": "DE",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Florida",
+    "stateCode": "FL",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Georgia",
+    "stateCode": "GA",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Hawaii",
+    "stateCode": "HI",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Idaho",
+    "stateCode": "ID",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Illinois",
+    "stateCode": "IL",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Indiana",
+    "stateCode": "IN",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Iowa",
+    "stateCode": "IA",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Kansas",
+    "stateCode": "KS",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Kentucky",
+    "stateCode": "KY",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Louisiana",
+    "stateCode": "LA",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Maine",
+    "stateCode": "ME",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Maryland",
+    "stateCode": "MD",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Massachusetts",
+    "stateCode": "MA",
+    "cash": "YES",
+    "age": 21,
+    "country": "USA"
+  },
+  {
+    "stateName": "Michigan",
+    "stateCode": "MI",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Minnesota",
+    "stateCode": "MN",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Mississippi",
+    "stateCode": "MS",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Missouri",
+    "stateCode": "MO",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Montana",
+    "stateCode": "MT",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Nebraska",
+    "stateCode": "NE",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Nevada",
+    "stateCode": "NV",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "New Hampshire",
+    "stateCode": "NH",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "New Jersey",
+    "stateCode": "NJ",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "New Mexico",
+    "stateCode": "NM",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "New York",
+    "stateCode": "NY",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "North Carolina",
+    "stateCode": "NC",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "North Dakota",
+    "stateCode": "ND",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Ohio",
+    "stateCode": "OH",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Oklahoma",
+    "stateCode": "OK",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Oregon",
+    "stateCode": "OR",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Pennsylvania",
+    "stateCode": "PA",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Rhode Island",
+    "stateCode": "RI",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "South Carolina",
+    "stateCode": "SC",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "South Dakota",
+    "stateCode": "SD",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Tennessee",
+    "stateCode": "TN",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Texas",
+    "stateCode": "TX",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Utah",
+    "stateCode": "UT",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Vermont",
+    "stateCode": "VT",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Virginia",
+    "stateCode": "VA",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Washington",
+    "stateCode": "WA",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "West Virginia",
+    "stateCode": "WV",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Wisconsin",
+    "stateCode": "WI",
+    "cash": "YES",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Wyoming",
+    "stateCode": "WY",
+    "cash": "NO",
+    "age":  18,
+    "country": "USA"
+  },
+  {
+    "stateName": "Ontario",
+    "stateCode": "ON",
+    "cash": "YES",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "Quebec",
+    "stateCode": "QC",
+    "cash": "NO",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "Nova Scotia",
+    "stateCode": "NS",
+    "cash": "YES",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "New Brunswick",
+    "stateCode": "NB",
+    "cash": "YES",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "Manitoba",
+    "stateCode": "MB",
+    "cash": "YES",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "British Columbia",
+    "stateCode": "BC",
+    "cash": "YES",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "Prince Edward Island",
+    "stateCode": "PE",
+    "cash": "YES",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "Saskatchewan",
+    "stateCode": "SK",
+    "cash": "YES",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "Alberta",
+    "stateCode": "AB",
+    "cash": "YES",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "Newfoundland and Labrador",
+    "stateCode": "NL",
+    "cash": "YES",
+    "age":  18,
+    "country": "CANADA"
+  },
+  {
+    "stateName": "Karnataka",
+    "stateCode": "KA",
+    "cash": "NO",
+    "age":  18,
+    "country": "INDIA"
+  },
+  {
+    "stateName": "Tamil Nadu",
+    "stateCode": "TN",
+    "cash": "NO",
+    "age":  18,
+    "country": "INDIA"
+  },
+  {
+    "stateName": "Andhra Pradesh",
+    "stateCode": "AP",
+    "cash": "YES",
+    "age":  23,
+    "country": "INDIA"
+  },
+  {
+    "stateName": "Telangana",
+    "stateCode": "TG",
+    "cash": "YES",
+    "age":  18,
+    "country": "INDIA"
+  }
+]
+

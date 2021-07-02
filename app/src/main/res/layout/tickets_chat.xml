@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_raise"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="0.5dp"
+    app:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:id="@+id/llTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_ten"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/player_select_bg_circle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:background="@drawable/background_white_circle"
+                    android:layout_height="40dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageViewFootBall"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/robo"
+                        app:civ_border_overlay="true" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_ten"
+                android:background="@color/green"
+                android:ellipsize="end"
+                android:fontFamily="@font/exo_extrabolditalic"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/size_five"
+                android:singleLine="true"
+                android:text="Open"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_16" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_five"
+            android:ellipsize="end"
+            android:fontFamily="@font/exo_extrabolditalic"
+            android:gravity="center|start"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="This is ne awy of checking the font s"
+            android:textColor="@color/darkest_gray"
+            android:textSize="@dimen/normal_size" />
+
+        <TextView
+            android:id="@+id/tvdestxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_five"
+            android:ellipsize="end"
+            android:fontFamily="@font/exo_regular"
+            android:gravity="center|start"
+            android:singleLine="true"
+            android:text="This is ne awy of checking the font s"
+            android:textColor="@color/darkest_gray"
+            android:textSize="@dimen/normal_size" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
